@@ -25,13 +25,11 @@ h2, h3, h6 {
 }
 
 #left-container {
-    /*background-color: aquamarine;*/
     color: azure;
     padding: 25px 25px 35px;
 }
 
 #right-container {
-    /*background-color: bisque;*/
     position: relative;
 }
 
