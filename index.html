@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the Fruit</title>
+</head>
+
+<!--
+<header class="icon">Mystery Fruit</header>
+-->
+
+<!-- Just an image -->
+<nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand" href="#" id="headerLogo">
+      <img src="img/logo.png" alt="logo">
+    </a>
+  </nav>
+
+
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center" id="containerRow">
+            <!-- Introduction and rules container -->
+            
+            
+                <div id="left-container" class="col-lg-7 p-5">
+                    <div class="intro-section">
+                        <div class="intro">
+                            <h6>Devadas & Grice Production</h6>
+                            <h2>Mystery Fruit</h2>
+                        </div>
+                        <div class="rules">
+                            <p>You'll be given four facts about a fruit, but a fact is revealed one at a time. If you're able to guess the fruit based on just one fact you get a total of five points. The point decreases by 1 whenever you need a second fact to guess the fruit. You only get 3 chances to guess per fact revealed, and you only get 30s to guess.</p>
+                        </div>
+                        <button id="startBtn" type="button" class="btn btn-dark">Start Game</button>
+                    </div>
+                </div>
+            
+
+            <!-- Game container -->
+            <div id="right-container" class="col-lg-5 p-5">
+                <div class="user-section">
+
+                    <div class="wrapper-game">
+                        <h3>Guess the Fruit</h3>
+
+                        <div class="answer-container">
+                            <input type="text" id="answer" placeholder="Your answer here">
+                            <br/>
+                            <input type="submit" value="Submit" class="btn btn-dark" id="answerBtn"></button>
+                            <br/>
+                            <button id="revealBtn" type="button" class="btn btn-dark">Reveal Hints</button>
+                            <p id="feedback"> <!-- Insert feedback here --> </p>
+                        </div>
+
+                        <div class="hints-container">
+                            
+                            <div id="hints">
+                                <ol id="hint-list"> <!-- Insert hint list here -->  </ol>
+                            </div>    
+                        </div>
+
+                        <div id="nextDiv">
+                            <button id="nextFruit" class="btn btn-dark">Next</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>  
+
+        </div>
+    </div>
+    <div id="endMessage"> <!-- Insert end game message here. --> </div>
+    <script src="script.js"></script>
+    <script src="fruits.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
